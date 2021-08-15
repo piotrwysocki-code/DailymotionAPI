@@ -5,8 +5,8 @@ import { ListingBoxComponent } from './components/listing-box/listing-box.compon
 import { PlaylistPageComponent } from './components/playlist-page/playlist-page.component';
 
 const routes: Routes = [
-  {path:"/home", component:HomePageComponent},
-  {path:"/playlist", component:PlaylistPageComponent},
+  {path:"home", component:HomePageComponent},
+  {path:"playlist", component:PlaylistPageComponent},
   {path:"**", component:HomePageComponent}
 
 ];
