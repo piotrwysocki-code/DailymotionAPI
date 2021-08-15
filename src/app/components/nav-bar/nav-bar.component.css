@@ -1,0 +1,26 @@
+#container{
+    margin: auto;
+    text-align: center;
+    
+}    
+
+#links{ 
+    width: fit-content;
+    margin: auto;
+}
+
+img{
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+a{
+    margin: 1rem;
+    text-decoration: none;
+    color: #5eb1f7;
+    font-weight: bold;
+}
+
+a:hover{
+    color: lightblue;
+}

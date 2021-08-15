@@ -1,0 +1,13 @@
+<div id="container">
+    <h1>Your Playlist</h1>
+    <ng-template [ngIf]="myPlaylist.length === 0" [ngIfElse]="videoList"> 
+        <p>There are no videos in your playlist.</p>
+    </ng-template>
+
+    <ng-template #videoList> 
+        <div id="playlist">
+            <button class="myBtn" (click)="clearBtnClicked()">Clear Playlist</button>
+            <app-listing-box [showBtns]="false" [videoList]="myPlaylist"></app-listing-box>
+        </div>
+    </ng-template> 
+</div>

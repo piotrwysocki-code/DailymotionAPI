@@ -1,0 +1,8 @@
+<div id="container">
+    <div id="search">
+        <input type="text" (keyup)="queryUpdated($event)">
+        <button (click)="searchBtnPressed()">Get Videos</button>
+    </div>
+    <router-outlet></router-outlet>
+    <app-listing-box [showBtns]="true" [videoList]="this.videoListFromAPI"></app-listing-box>
+</div>

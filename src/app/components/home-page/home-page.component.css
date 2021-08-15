@@ -1,0 +1,25 @@
+#container{
+    margin-top: 2.5rem;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search{
+    margin-bottom: 2em;
+}
+
+button{
+    margin-left: .5rem;
+    height: 1.9rem;
+    font-size: 8pt;
+    font-weight: bold;
+    width: 5rem;
+    cursor: pointer;
+}
+
+input{
+    height: 1.5rem;
+    width: 25rem;
+}
+

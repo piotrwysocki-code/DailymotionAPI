@@ -1,0 +1,11 @@
+<div id="container">
+    <a target="_blank" [href]="externalLink"><img id="preview-img" [src]="video.thumbnail_360_url"></a>
+    <div id="info">    
+        <a id="title" target="_blank" [href]="externalLink">{{video.title}}</a>
+        <div id="userinfo">
+            <a target="_blank" id="username" [href]="externalLinkUser"><img id="user-avatar" [src]="video['owner.avatar_80_url']"></a><a target="_blank" id="username" [href]="externalLinkUser">{{video["owner.username"]}}</a>
+        </div>
+            <p>Date Posted: {{video.created_time}} | Views: {{video.views_total}}</p>
+        <button *ngIf="showAddBtn" [ngClass]="isDistinct? 'myBtn' : 'myDisabledBtn' " [disabled]="isDistinct? false : true" (click)="addBtnClicked()">{{addBtnText}}</button>
+    </div>
+</div>
